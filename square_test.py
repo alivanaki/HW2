@@ -12,5 +12,10 @@ class MyTestCase(unittest.TestCase):
         square = Square(5)
         self.assertEqual(square.getSide(), 5)
 
+    def test_set_side(self):
+        square = Square(5)
+        square.setSide(7)
+        self.assertEqual(square.getSide(), 7)
+
 if __name__ == '__main__':
     unittest.main()
