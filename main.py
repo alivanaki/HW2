@@ -19,3 +19,9 @@ class Rectangle(Shape):
 
     def getHeight(self):
         return self.__height
+
+    def setWidth(self, width):
+        self.__width = width
+
+    def setHeight(self, height):
+        self.__height = height
