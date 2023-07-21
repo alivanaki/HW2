@@ -25,3 +25,10 @@ class Rectangle(Shape):
 
     def setHeight(self, height):
         self.__height = height
+
+class Square(Shape):
+    def __init__(self, side):
+        self.__side = side
+
+    def computeArea(self):
+        return self.__side * self.__side
