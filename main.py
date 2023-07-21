@@ -13,3 +13,9 @@ class Rectangle(Shape):
 
     def computeArea(self):
         return self.__width * self.__height
+
+    def getWidth(self):
+        return self.__width
+
+    def getHeight(self):
+        return self.__height
