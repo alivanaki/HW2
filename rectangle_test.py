@@ -15,6 +15,18 @@ class TestRectangle(unittest.TestCase):
         rect = Rectangle(width=5, height=10)
         self.assertEqual(rect.getHeight(), 10)
 
+    def test_set_width(self):
+        rect = Rectangle(5, 10)
+        rect.setWidth(7)
+        self.assertEqual(rect.getWidth(), 7)
+        self.assertEqual(rect.getHeight(), 10)
+
+    def test_set_height(self):
+        rect = Rectangle(5, 10)
+        rect.setHeight(12)
+        self.assertEqual(rect.getWidth(), 5)
+        self.assertEqual(rect.getHeight(), 12)
+
 
 if __name__ == '__main__':
     unittest.main()
