@@ -32,3 +32,9 @@ class Square(Shape):
 
     def computeArea(self):
         return self.__side * self.__side
+
+    def setSide(self, side):
+        self.__side = side
+
+    def getSide(self):
+        return self.__side
